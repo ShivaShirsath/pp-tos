@@ -1,15 +1,24 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #333;
+  background-color: #0073e6;
   color: #fff;
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
 main {
@@ -17,23 +26,59 @@ main {
   background-color: #fff;
   margin: 2em auto;
   max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 section {
   margin-bottom: 2em;
 }
 
-h2 {
-  color: #333;
+section h2 {
+  color: #0073e6;
+  font-size: 1.75em;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+section p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
 }
 
 footer {
   text-align: center;
   padding: 1em 0;
-  background-color: #333;
+  background-color: #0073e6;
   color: #fff;
   position: fixed;
   width: 100%;
   bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 1em;
+    margin: 1em;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  section p {
+    font-size: 1em;
+  }
 }
